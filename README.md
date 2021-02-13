@@ -23,15 +23,15 @@ An application which lists out all the missions launched by Space X along with t
 http://space-x-app-shashank.herokuapp.com/
 
 ## Light house score
-<img src="./images/lighthouse_score.png" alt="lighthouse_score">
+<img src="./images/lighthouse_score.PNG" alt="lighthouse_score">
 
 ## Screen shots
 
 ### Desktop
-<img src="./images/desktop.png" alt="desktop">
+<img src="./images/desktop.PNG" alt="desktop">
 
 ### Tablet
-<img src="./images/tablet.png" alt="tablet">
+<img src="./images/tablet.PNG" alt="tablet">
 
 ### Mobile
 <img src="./images/mobile.png" alt="mobile">
