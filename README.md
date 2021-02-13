@@ -25,15 +25,13 @@ http://space-x-app-shashank.herokuapp.com/
 ## Light house score
 <img src="./images/lighthouse_score.PNG" alt="lighthouse_score">
 
-## Screen shots
-
-### Desktop
+## Desktop
 <img src="./images/desktop.PNG" alt="desktop">
 
-### Tablet
+## Tablet
 <img src="./images/tablet.PNG" alt="tablet">
 
-### Mobile
+## Mobile
 <img src="./images/mobile.PNG" alt="mobile">
 
 
