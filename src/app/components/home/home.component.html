@@ -1,0 +1,59 @@
+<h2>SpaceX Launch Programs</h2>
+
+<div class="home" >
+        <div class="row flex">
+            <div class="row-flex">
+                <div class="card-container">
+                        <h2 class="header">Filters</h2>
+                        <p class=" heading-style-launch-year">
+                            Launch Year
+                        </p>
+                        <hr class="filter" />
+                        <div class="row flex">
+                            <div class="button-filter-container">
+                                <ng-container *ngFor="let year of years">
+                                    <button [ngClass]="(queryParam['launch_year'] == year) ? 'btn btn-success button-filter' : 'btn btn-outline-success button-filter'"
+                                        (click)="filterFunc('launch_year',year)">{{year}}</button>
+                                </ng-container>
+                            </div>
+                        </div>
+                        <p class="heading-style">
+                            Successful Launch
+                        </p>
+                        <hr class="filter" />
+                        <div class="button-filter-container">
+                            <button 
+                                [ngClass]="(queryParam['launch_success'] != undefined && queryParam['launch_success'] == true) ? 'btn btn-success button-filter' : 'btn btn-outline-success button-filter'"
+                                (click)="filterFunc('launch_success',true)">True</button>
+                            <button 
+                                [ngClass]="(queryParam['launch_success'] != undefined && queryParam['launch_success'] == false) ? 'btn btn-success button-filter' : 'btn btn-outline-success button-filter'"
+                                (click)="filterFunc('launch_success',false)">False</button>
+                        </div>
+                        <p class="heading-style">
+                            Successful Landing
+                        </p>
+                        <hr class="filter" />
+                        <div class="button-filter-container">
+                            <button [ngClass]="(queryParam['land_success'] != undefined && queryParam['land_success'] == true) ? 'btn btn-success button-filter' : 'btn btn-outline-success button-filter'"
+                                (click)="filterFunc('land_success',true)">True</button>
+                            <button [ngClass]="(queryParam['land_success'] != undefined && queryParam['land_success'] == false) ? 'btn btn-success button-filter' : 'btn btn-outline-success button-filter'"
+                                (click)="filterFunc('land_success',false)">False</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="row-flex-2">
+                <div class="row flex" *ngIf="rocketDetails.length">
+                    <ng-container *ngFor="let rocket of rocketDetails">
+                        <div >
+                            <app-launch-details [rocket]="rocket"></app-launch-details>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="dev-name">
+                Developed by : Shashank Kapoor
+            </h2>
+        </div>
+    </div>

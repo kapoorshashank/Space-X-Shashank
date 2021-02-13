@@ -1,0 +1,33 @@
+.details {
+    color: #63659f;
+    font-weight: 400;
+}
+
+.image{
+    background-color: #F2F2F2;
+    width: 16rem;
+    height: 20rem;
+}
+.card {
+    width: 18rem;
+    padding: 1rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.flight-name {
+    color: #63659f;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
