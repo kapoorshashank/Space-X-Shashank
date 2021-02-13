@@ -18,6 +18,10 @@ An application which lists out all the missions launched by Space X along with t
 - Karma Jasmine for Unit testing
 - Heroku for Deployment
 
+## Deployed URL:
+
+http://space-x-app-shashank.herokuapp.com/
+
 ## Light house score
 <img src="./images/lighthouse_score.png" alt="lighthouse_score">
 
