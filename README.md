@@ -34,7 +34,7 @@ http://space-x-app-shashank.herokuapp.com/
 <img src="./images/tablet.PNG" alt="tablet">
 
 ### Mobile
-<img src="./images/mobile.png" alt="mobile">
+<img src="./images/mobile.PNG" alt="mobile">
 
 
 
