@@ -1,35 +1,46 @@
 <div class="card">
-        <div>
-            <img class="image" [src]="rocket.links.mission_patch">
-        </div>
-        <ul>
-           <li class="flight-name">
-            {{this.rocket.mission_name}} # {{this.rocket.flight_number}}
-           </li>
-            <li>
-                Mission Ids:
-                <div class="details">{{this.rocket.mission_id.length === 0 ? 'No mission id' : this.rocket.mission_id}}</div>
-
-                <!-- <ul>
-                    <li class="details">•&nbsp;{{this.rocket.mission_id.length === 0 ? 'No mission id' : this.rocket.mission_id}}</li>
-                </ul> -->
-            </li>
-            <li>
-                Launch Year:
-                <span class="details">{{this.rocket.launch_year}}</span>
-            </li>
-            <li>
-                Successful Launch:
+    <div>
+        <img class="image" [src]="rocket.links.mission_patch">
+    </div>
+    <div class="flight-name">
+        {{this.rocket.mission_name}} # {{this.rocket.flight_number}}
+    </div>
+    <ul>
+        <li>
+            Mission Ids:
+            <div class="details">{{this.rocket.mission_id.length === 0 ? 'No mission id' : this.rocket.mission_id}}
+            </div>
+        </li>
+        <li>
+            Launch Year:
+            <span class="details">{{this.rocket.launch_year}}</span>
+        </li>
+        <li>
+            Successful Launch:
+            <ng-container *ngIf="this.rocket.launch_success===null;else launchSuccess">
+                <span class="details">
+                    NA
+                </span>
+            </ng-container>
+            <ng-template #launchSuccess>
                 <span class="details">
                     {{this.rocket.launch_success ? 'true' : 'false'}}
                 </span>
-            </li>
-            <li>
-                Successful Landing:
+            </ng-template>
+        </li>
+        <li>
+            Successful Landing:
+            <ng-container *ngIf="this.rocket.rocket.first_stage.cores[0].land_success===null;else landSuccess">
                 <span class="details">
-                    <!-- true -->
-                    {{this.rocket.land_success ? 'true' : 'false'}}
+                    NA
                 </span>
-            </li>
-          </ul>  
-    </div>
+            </ng-container>
+            <ng-template #landSuccess>
+                <span class="details">
+                    {{this.rocket.rocket.first_stage.cores[0].land_success ? 'true' : 'false'}}
+                </span>
+            </ng-template>
+
+        </li>
+    </ul>
+</div>

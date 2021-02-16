@@ -37,6 +37,7 @@ h1{
 }
 .body-padding{
     padding:1%;
+    background-color: #F2F2F2;
 }
 *, ::after, ::before {
     box-sizing: border-box;

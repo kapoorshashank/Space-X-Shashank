@@ -32,10 +32,9 @@ width: 20rem;
 
 .flight-name {
     color: #63659f;
-    /* font-size: 20px; */
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-weight: bold;
+    margin: 4px 1px 8px 1px;
+    width: 13rem;
 }
 
 ul{

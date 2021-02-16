@@ -12,7 +12,8 @@ export class LaunchDetailsComponent {
 
   @Input('rocket') rocket: LaunchDetails;
 
-  constructor() { }
+  constructor() { 
+  }
 
 
 }

@@ -27,7 +27,7 @@ export class RecordDetailsService {
 
     return this.http.get<Records[]>(url)
       .pipe(
-        tap(Records => console.log('Records retrieved!')),
+        // tap(Records => console.log('Records retrieved!')),
         catchError(this.handleError<Records[]>('Get Space X data', []))
       );
 
