@@ -5,6 +5,6 @@ interface LaunchDetails {
     launch_year?: number;
     launch_success?: boolean;
     links?: any;
-    land_success?: any;
+    rocket?:any;
   }
 
