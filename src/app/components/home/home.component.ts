@@ -28,7 +28,6 @@ export class HomeComponent implements OnInit {
     // initial load of api
     this.service.getFilteredData('').subscribe((data) => {
     this.rocketDetails = data;
-    console.log(this.rocketDetails)
     });
   }
 
