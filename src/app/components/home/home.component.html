@@ -48,6 +48,12 @@
                             <app-launch-details [rocket]="rocket"></app-launch-details>
                         </div>
                     </ng-container>
+                    
+                </div>
+                <div *ngIf="rocketDetails.length===0">
+                    <div class="row nodata">
+                            No Data Available
+                    </div>
                 </div>
             </div>
         </div>

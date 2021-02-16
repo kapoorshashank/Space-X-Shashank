@@ -43,4 +43,5 @@ h1{
 }
 ul li{
 list-style: none;
-    padding: 0.125em;}
+    padding: 0.125em;
+    margin-bottom: 0.5rem;}

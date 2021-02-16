@@ -5,11 +5,11 @@
 
 .image{
     background-color: #F2F2F2;
-    width: 16rem;
-    height: 20rem;
+    width: 13rem;
+    height: 15rem;
 }
 .card {
-    width: 18rem;
+    width: 15rem;
     padding: 1rem;
     margin-bottom: 15px;
     position: relative;
@@ -25,9 +25,12 @@
 
 .flight-name {
     color: #63659f;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-style: normal;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
+ul{
+    padding-left: 0;
+}
