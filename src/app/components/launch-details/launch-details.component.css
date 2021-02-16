@@ -8,8 +8,15 @@
     width: 13rem;
     height: 15rem;
 }
+@media only screen and (max-width: 1024px){
+.image{
+
+width: 20rem;
+    height: 16rem;
+}
+}
 .card {
-    width: 15rem;
+    width: 100%;
     padding: 1rem;
     margin-bottom: 15px;
     position: relative;
