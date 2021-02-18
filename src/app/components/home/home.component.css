@@ -32,8 +32,8 @@ body {
   box-sizing: border-box;
 }
 .row-flex {
-  flex: 0 0 23%;
-  max-width: 25%;
+  flex: 0 0 32%;
+  max-width: 32%;
 }
 
 @media (min-width: 992px) {
@@ -42,20 +42,36 @@ body {
     max-width: 25%;
   }
 }
-
-@media (min-width: 992px) {
-  .row-flex-2 {
-    flex: 0 0 75%;
-    max-width: 75%;
+@media (min-width: 1200px) {
+  .row-flex {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 }
+
+@media (min-width: 750px) {
+  .row-flex-2 {
+    flex: 0 0 68%;
+    max-width: 68%;
+  }
+}
+@media (min-width: 1200px) {
+  .row-flex-2 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+/* .row-flex-2 {
+  flex: 0 0 75%;
+  max-width: 75%;
+} */
 
 .home {
   background-color: #f2f2f2;
 }
 
 .card-container {
-  width: 100%;
+  width: 98%;
   background-color: white;
 }
 

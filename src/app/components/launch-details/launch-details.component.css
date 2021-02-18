@@ -13,8 +13,19 @@
 
 width: 20rem;
     height: 16rem;
+   
 }
 }
+@media (min-device-width: 480px) and (max-device-width: 1024px) {
+    .image{
+    
+    
+        width: 13rem;
+        height: 13rem;
+    }
+    }
+  
+
 .card {
     width: 100%;
     padding: 1rem;
